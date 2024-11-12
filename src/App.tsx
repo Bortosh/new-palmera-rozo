@@ -1,11 +1,33 @@
-
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Sidebar from "./components/sidebar/SidebarContainer"
+import HeaderContainer from "./components/header/HeaderContainer"
+import Layout from "./components/Layout"
+import FooterContainer from "./components/footer/FooterContainer"
+import './app.css'
+import routes from "./components/sidebar/routes/routes"
 
 function App() {
 
   return (
     <>
-      <h1>palmeras</h1>
+      <BrowserRouter>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '80vh', maxWidth: '100%' }}>
+          <HeaderContainer />
+          <div className="app">
+            <Sidebar />
+            <Routes>
+              <Route path="/" element={<Layout />} >
+                {
+                  routes.map(({ id, index, path, element }) => (
+                    <Route key={id} path={path} element={element} {...(index ? { index: true } : {})} />
+                  ))
+                }
+              </Route>
+            </Routes>
+          </div>
+        </div>
+        <FooterContainer />
+      </BrowserRouter>
     </>
   )
 }
