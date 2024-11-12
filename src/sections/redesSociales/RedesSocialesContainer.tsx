@@ -1,4 +1,4 @@
-import DefaultMain from "../../components/DefaultMain"
+import DefaultMain from "../../generalPalmeras/DefaultMain"
 
 
 const RedesSocialesContainer = () => {

@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Sidebar from "./components/sidebar/SidebarContainer"
 import HeaderContainer from "./components/header/HeaderContainer"
-import Layout from "./components/Layout"
+import Layout from "./generalPalmeras/Layout"
 import FooterContainer from "./components/footer/FooterContainer"
 import './app.css'
-import routes from "./components/sidebar/routes/routes"
+import routes from "./routes"
 
 function App() {
 

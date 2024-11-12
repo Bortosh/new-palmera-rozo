@@ -5,8 +5,6 @@ import SidebarLogo from './components/SidebarLogo';
 import { useEffect, useState } from 'react';
 import ModalSidebar from './components/ModalSidebar';
 
-
-
 const Sidebar = () => {
 
   const [isMobile, setIsMobile] = useState(false)
