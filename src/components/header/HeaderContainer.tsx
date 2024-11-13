@@ -8,11 +8,11 @@ const HeaderContainer = () => {
 
   return (
     <div className={style.mainContentHeader}>
-      <div>
-        <h1>Las Palmeras</h1>
+      <div className={style.wrapperHeaderTitle}>
+        <h1 className={style.titleText}>Las Palmeras</h1>
       </div>
-      <div>
-        <h4>{formattedPathname}</h4>
+      <div className={style.wrapperSubTitle}>
+        <h4 className={style.subTitleText}>{formattedPathname}</h4>
       </div>
 
     </div>

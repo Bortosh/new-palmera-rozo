@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #e0b1b1;
+  background: #5b9fb3;
   color: black;
   padding: 20px;
   z-Index: '1000';
@@ -22,12 +22,13 @@
 
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 788px) {
   .sidebarWrapper {
     height: 10vh;
     margin-left: 1rem;
     width: 100px;
     background-color: white;
+    margin-top: 1px;
   }
 
   .sidebarWrapperList {
@@ -44,4 +45,10 @@
     color: green;
   }
 
+}
+
+@media (max-width: 788px) {
+  .sidebarWrapper {
+    height: 7vh;
+  }
 }

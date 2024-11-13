@@ -19,7 +19,7 @@ const Sidebar = () => {
   };
 
   const updateWindowDimensions = () => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 788);
   };
 
   useEffect(() => {

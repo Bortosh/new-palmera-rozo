@@ -4,6 +4,9 @@
     display: flex;
     flex: 1 1 auto;
     overflow: auto;
+    border-top: 1px solid rgb(177, 172, 172);
+    margin-right: 1rem;
+    
 }
 
   /* Media query para dispositivos móviles */
@@ -14,6 +17,7 @@
         padding: 0 1rem;
         display: flex;
         justify-content: start;
+        
     }
 
 }
