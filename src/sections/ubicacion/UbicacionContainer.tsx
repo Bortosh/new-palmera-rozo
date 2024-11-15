@@ -4,7 +4,7 @@ import DefaultMain from "../../generalPalmeras/DefaultMain"
 const UbicacionContainer = () => {
   return (
     <DefaultMain title="ubicacion">
-      <h1>ubicacion</h1>
+      <p>ubicacion</p>
     </DefaultMain>
   )
 }

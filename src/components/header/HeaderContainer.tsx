@@ -12,7 +12,7 @@ const HeaderContainer = () => {
         <h1 className={style.titleText}>Las Palmeras</h1>
       </div>
       <div className={style.wrapperSubTitle}>
-        <h4 className={style.subTitleText}>{formattedPathname}</h4>
+        <h4 className={style.subTitleText}>{formattedPathname === '' ? 'Las Palmeras' : formattedPathname}</h4>
       </div>
 
     </div>

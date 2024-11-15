@@ -4,6 +4,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Merriweather', serif;
+  background-color: #f5f5f0;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #2b2b2b;
 }
 
 .main-content-layout {
@@ -13,7 +21,7 @@ body {
 }
 
   /* Media query para dispositivos móviles */
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     .main-content-layout {
     flex-wrap: nowrap;
     display: flex;

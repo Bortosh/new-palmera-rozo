@@ -19,7 +19,7 @@ const Sidebar = () => {
   };
 
   const updateWindowDimensions = () => {
-    setIsMobile(window.innerWidth < 788);
+    setIsMobile(window.innerWidth < 790);
   };
 
   useEffect(() => {
@@ -42,7 +42,9 @@ const Sidebar = () => {
           </div>
           :
           <div className={styles.sidebarWrapper}>
-            <SidebarLogo />
+            <div className={styles.wrapperSidebarLogo}>
+              <SidebarLogo />
+            </div>
             <ul className={styles.sidebarWrapperList}>
               <SidebarList />
             </ul>

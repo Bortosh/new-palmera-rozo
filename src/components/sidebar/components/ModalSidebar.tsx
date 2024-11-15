@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import { Menu as MenuIcon } from '@mui/icons-material';
@@ -30,8 +29,8 @@ const ModalSidebar = ({ handleClose, handleClickOpen, modalRender }: Props) => {
 
     return (
         <>
-            <Button variant="outlined" onClick={handleClickOpen}>
-                <MenuIcon />
+            <Button variant="outlined" onClick={handleClickOpen} style={{border: 'none'}}>
+                <MenuIcon style={{fontSize: '40px', color: 'rgb(107, 67, 7)'}}/>
             </Button>
             <Dialog
                 open={modalRender}
@@ -40,8 +39,7 @@ const ModalSidebar = ({ handleClose, handleClickOpen, modalRender }: Props) => {
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
             >
-                <DialogTitle>{'opciones'}</DialogTitle>
-                <DialogContent>
+                <DialogContent sx={{ padding: '0 !important' }}>
                     <DialogContentText>
                         <ul className={styles.sidebarWrapperList}>
                             <SidebarList handleClose={handleClose} />

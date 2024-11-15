@@ -1,8 +1,11 @@
-
+import palms_black from '../../../../public/palms_black.png'
+import styles from '../styles/sidebarstyle.module.css'
 
 const SidebarLogo = () => {
     return (
-        <h3>logo</h3>
+        <>
+            <img className={styles.palms_black} src={palms_black} alt='palmeras' />
+        </>
     )
 }
 

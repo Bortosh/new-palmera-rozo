@@ -15,7 +15,7 @@ const DefaultMain: FC<Props> = ({ title = 'Las Palmeras', children }) => {
   >
     <Box sx={{ mb: 2 }}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
-        <h1>{ title }</h1>
+        <h2 className='masterSubTitle'>{ title }</h2>
       </div>
       <Divider />
     </Box>
