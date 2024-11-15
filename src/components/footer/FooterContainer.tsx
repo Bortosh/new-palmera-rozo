@@ -1,10 +1,10 @@
 import style from './styles/footerStyle.module.css'
-
+import SidebarLogo from '../sidebar/components/SidebarLogo';
 
 const FooterContainer = () => {
   return (
     <div className={style.mainContentFooter}>
-      <h1>Footer</h1>
+      <SidebarLogo />
     </div>
   )
 }

@@ -7,7 +7,6 @@
   background-color: #d1bda5;
   padding: 20px;
   z-Index: '1000';
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebarWrapperList {
@@ -35,17 +34,14 @@
   border-bottom: 1px solid rgb(29, 13, 13);
 }
 
-/* BURGUER */
-
-
-
 /* Media query para dispositivos móviles */
 @media (max-width: 788px) {
   .sidebarWrapper {
     height: 9.15vh;
     width: 100px;
-    background-color: #d1bda5;
+    background-color: transparent;
     margin-top: 1px;
+    position: absolute;
   }
 
   .sidebarWrapperList {

@@ -1,5 +1,4 @@
 
-
 .app {
     display: flex;
     flex: 1 1 auto;
@@ -18,6 +17,13 @@
         justify-content: start;
         border-top: none;
         
+    }
+
+    .containerSidebarHeader {
+        background-color: #d1bda5;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid black;
     }
 
 }

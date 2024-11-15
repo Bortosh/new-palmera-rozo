@@ -1,18 +1,15 @@
 .containerPalmeras {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
     margin: 0 auto;
-    flex-wrap: nowrap; /* Evita que cambie antes del media query */
-    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
-
 
 .containerImg {
     flex: 1;
     max-width: 800px;
     min-width: 500px;
+    margin-right: 3rem;
     padding-top: 1rem;
 }
 
@@ -21,9 +18,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border: 3px solid #d1bda5;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 .textContainer {
@@ -34,18 +29,24 @@
 @media (max-width: 1200px) {
     .containerPalmeras {
         flex-direction: column;
-        align-items: center;
     }
-    .containerImg, .textContainer {
+
+    .containerImg,
+    .textContainer {
         max-width: 100%;
     }
 
+    .containerImg {
+        margin-right: 0;
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 600px) {
     .containerImg {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 400px;
+        min-width: 400px;
+        padding: 0;
     }
 }
 
@@ -63,4 +64,3 @@
         min-width: 250px;
     }
 }
-

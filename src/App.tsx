@@ -12,9 +12,11 @@ function App() {
     <>
       <BrowserRouter>
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '80vh', maxWidth: '100%' }}>
-          <HeaderContainer />
+          <div className={styles.containerSidebarHeader}>
+            <HeaderContainer />
+            <Sidebar />
+          </div>
           <div className={styles.app}>
-          <Sidebar />
             <Routes>
               <Route path="/" element={<Layout />} >
                 {
