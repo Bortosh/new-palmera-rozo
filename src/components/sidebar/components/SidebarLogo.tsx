@@ -1,4 +1,4 @@
-import palms_black from '../../../../public/palms_black.png'
+import palms_black from '../../../assets/logo/palms_black.png'
 import styles from '../styles/sidebarstyle.module.css'
 
 const SidebarLogo = () => {

@@ -49,6 +49,10 @@
   .wrapperSubTitle {
     padding-bottom: 1.5rem;
   }
+
+  .mainContentHeader {
+    margin-left: 110px;
+  }
 }
 
 @media (max-width: 344px) {

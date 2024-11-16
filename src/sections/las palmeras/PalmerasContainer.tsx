@@ -1,6 +1,6 @@
 import DefaultMain from "../../generalPalmeras/DefaultMain"
 import styles from './styles/palmeras.module.css'
-import palmeras from '../../../public/palmeras.jpeg'
+import palmeras from '../../assets/photos/palmeras.jpeg'
 
 const PalmerasContainer = () => {
   return (
