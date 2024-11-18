@@ -3,26 +3,25 @@ import { FC } from "react"
 import './styles.css'
 
 interface Props {
-    title?: string,
-    children: JSX.Element[] | JSX.Element
-  }
+  title?: string,
+  children: JSX.Element[] | JSX.Element
+}
 
 const DefaultMain: FC<Props> = ({ title = 'Las Palmeras', children }) => {
+
   return (
     <Box
-    component='main'
-    className={'main-content-layout'}
-  >
-    <Box sx={{ mb: 2 }}>
-      <div style={{display: 'flex', justifyContent: 'space-between'}}>
-        <h2 className='masterSubTitle'>{ title }</h2>
-      </div>
-      <Divider />
+      component='main'
+      className={'main-content-layout'}
+    >
+      <Box sx={{ mb: 2 }}>
+        <div className='wrapperSubTitle'>
+          <h2 className='masterSubTitle'>{title}</h2>
+        </div>
+        <Divider />
+      </Box>
+      {children}
     </Box>
-    <div>
-      { children }
-    </div>
-  </Box>
   )
 }
 
