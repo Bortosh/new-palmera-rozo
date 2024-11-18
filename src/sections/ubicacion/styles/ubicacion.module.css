@@ -15,9 +15,21 @@
     pointer-events: auto;
 }
 
+.ubicacionAncore {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
 @media (max-width: 540px) {
     .mapContainer {
         margin-left: -230px;
+    }
+    .ubicacionAncore {
+        font-size: 10px;
     }
 }
 
