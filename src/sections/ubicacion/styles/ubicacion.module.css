@@ -1,0 +1,46 @@
+.mapContainer {
+    display: flex;
+    width: 200%;
+    margin-left: -300px;    
+}
+
+.ubicacionWrapper {
+    width: 100%;
+    max-width: 1200px;
+    height: 60vh;
+    border-radius: 4px;
+    padding: 0px 300px;
+    border: none;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.ubicacionAncore {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+@media (max-width: 540px) {
+    .mapContainer {
+        margin-left: -230px;
+    }
+    .ubicacionAncore {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .mapContainer {
+        margin-left: -290px;
+    }
+}
+
+@media (max-width: 344px) {
+    .mapContainer {
+        margin-left: -340px;
+    }
+}

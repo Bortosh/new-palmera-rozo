@@ -1,0 +1,16 @@
+.mainContentFooter {
+  display: flex;
+  justify-content: center;
+  margin-left: 240px;
+  padding-bottom: 3rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 788px) {
+  .mainContentFooter {
+    margin: 0 auto;
+    padding: 2rem;
+    border-top: 1px solid #00000030;
+  }
+
+}
