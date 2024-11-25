@@ -17,15 +17,21 @@
 .wrapperSidebarItems {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .sidebarItem {
-  color:rgb(107, 67, 7);
+  color:rgb(131, 91, 32);
   text-decoration: none;
   margin-top: 2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   font-family: 'Lora', serif;
+}
+
+.active {
+  color: rgb(8, 7, 5);
+  font-weight: bolder;
 }
 
 /* LOGO */
@@ -54,10 +60,6 @@
     background-color: #fce9d7;
     margin: 0;
     padding: 1rem 1rem;
-  }
-
-  .sidebarItem {
-    color: rgb(107, 67, 7);
   }
 
   .MuiDialogContent-root {

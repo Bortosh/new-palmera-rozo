@@ -42,7 +42,7 @@
 .modalContent img {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .modalContent {
@@ -52,6 +52,6 @@
 @media (max-width: 768px) {
   .modalContent img {
     width: 85%;
-    padding-left: 1.3rem;
+    padding-left: .9rem;
   }
 }
