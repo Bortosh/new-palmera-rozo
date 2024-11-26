@@ -35,7 +35,13 @@
 
 @media (max-width: 430px) {
     .mapContainer {
-        margin-left: -290px;
+        margin-left: -280px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ubicacionWrapper {
+        margin-left: -1.9rem;
     }
 }
 

@@ -55,6 +55,12 @@
   }
 }
 
+@media (max-width: 360px) {
+  .mainContentHeader {
+    margin-left: 80px;
+  }
+}
+
 @media (max-width: 344px) {
   .wrapperSubTitle {
     padding-bottom: 1.4rem;
