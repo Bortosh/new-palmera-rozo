@@ -1,23 +1,23 @@
 .mapContainer {
     display: flex;
     justify-content: center;
-    width: 100%; /* Asegúrate de ocupar todo el ancho */
+    width: 100%;
     margin: 0 auto;
-    overflow: hidden; /* Previene scroll no deseado */
+    overflow: hidden;
 }
 
 .ubicacionWrapper {
     width: 100%;
-    max-width: 100%; /* Evita restricciones de tamaño */
-    height: 60vh; /* Mantiene una altura razonable */
+    max-width: 100%;
+    height: 60vh;
     border-radius: 4px;
     border: none;
     overflow: hidden;
 }
 
 iframe {
-    width: 100%; /* Ocupa el ancho total */
-    height: 100%; /* Ajusta la altura al contenedor */
+    width: 100%;
+    height: 100%;
     border: none;
 }
 
