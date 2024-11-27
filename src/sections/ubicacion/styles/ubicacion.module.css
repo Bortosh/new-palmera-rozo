@@ -1,18 +1,24 @@
 .mapContainer {
     display: flex;
-    width: 200%;
-    margin-left: -300px;    
+    justify-content: center;
+    width: 100%; /* Asegúrate de ocupar todo el ancho */
+    margin: 0 auto;
+    overflow: hidden; /* Previene scroll no deseado */
 }
 
 .ubicacionWrapper {
     width: 100%;
-    max-width: 1200px;
-    height: 60vh;
+    max-width: 100%; /* Evita restricciones de tamaño */
+    height: 60vh; /* Mantiene una altura razonable */
     border-radius: 4px;
-    padding: 0px 300px;
     border: none;
     overflow: hidden;
-    pointer-events: auto;
+}
+
+iframe {
+    width: 100%; /* Ocupa el ancho total */
+    height: 100%; /* Ajusta la altura al contenedor */
+    border: none;
 }
 
 .ubicacionAncore {
@@ -26,8 +32,9 @@
 
 @media (max-width: 540px) {
     .mapContainer {
-        margin-left: -230px;
+        width: 320%;
     }
+
     .ubicacionAncore {
         font-size: 10px;
     }
