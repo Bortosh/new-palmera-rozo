@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.masterSubTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .main-content-layout {
   margin: 180px 2rem 65px 280px;
 }
