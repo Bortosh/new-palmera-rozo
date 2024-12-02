@@ -4,6 +4,12 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
 .galleryItem {
   overflow: hidden;
   display: flex;
@@ -18,12 +24,46 @@
   aspect-ratio: 4 / 3;
 }
 
-@media (max-width: 768px) {
-  .galleryContainer {
-    grid-template-columns: 1fr;
-  }
+.wrapperOptions {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
 
+.option {
+  font-family: 'Merriweather', serif;
+  color: rgb(131, 91, 32);
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.option.selected {
+  color: rgb(61, 42, 10);;
+}
+
+.galleryContainer video {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.galleryVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .galleryVideo {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /* MODAL */
 .modal {
@@ -54,4 +94,47 @@
     width: 85%;
     padding-left: .9rem;
   }
+}
+
+
+
+
+/* video */
+
+.videoContainer {
+  /* position: relative; */
+  display: inline-block;
+  width: 100%;
+  max-width: 600px; /* Cambia según tu diseño */
+}
+
+.galleryVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.controls {
+  /* position: absolute; */
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(10, 6, 6, 0.788);
+  padding: 10px;
+}
+
+.controlButton {
+  font-size: 16px;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controlButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
