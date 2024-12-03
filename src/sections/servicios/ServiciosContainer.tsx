@@ -3,7 +3,7 @@ import DefaultMain from "../../generalPalmeras/DefaultMain"
 
 const ServiciosContainer = () => {
   return (
-    <DefaultMain title="Servicios">
+    <DefaultMain>
       <p>Servcios</p>
     </DefaultMain>
   )
