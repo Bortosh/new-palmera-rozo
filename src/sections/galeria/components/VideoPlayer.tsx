@@ -63,6 +63,8 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ id, src, videoRefs, handlePla
         }}
         src={src}
         className={styles.galleryVideo}
+        disablePictureInPicture
+        controls={false}
       />
 
       <div className={styles.controls}>
