@@ -4,6 +4,7 @@ import pictures from "./components/images"
 import styles from './styles/galeria.module.css'
 import videos from "./components/videos";
 import VideoPlayer from "./components/VideoPlayer";
+import { Divider } from "@mui/material";
 
 
 const GaleriaContainer = () => {
@@ -33,7 +34,9 @@ const GaleriaContainer = () => {
   };
 
   return (
-    <DefaultMain title="Galería">
+    <DefaultMain>
+      <h1 className={styles.sectionTitle}>Nuestra galería</h1>
+      <Divider />
       <div className={styles.wrapperOptions}>
         <p className={`${styles.option} ${selectedOption === 'fotos' ? styles.selected : ''}`} onClick={() => selectOption('fotos')}>fotos</p>
         <p className={`${styles.option} ${selectedOption === 'videos' ? styles.selected : ''}`} onClick={() => selectOption('videos')}>videos</p>

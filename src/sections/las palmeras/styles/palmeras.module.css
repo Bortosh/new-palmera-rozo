@@ -1,3 +1,9 @@
+.sectionTitle {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
 .containerPalmeras {
     display: flex;
     align-items: flex-start;
