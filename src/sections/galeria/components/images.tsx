@@ -1,25 +1,43 @@
 import piscina from '../../../assets/photos/piscina.jpeg'
-import piscinaAzul from '../../../assets/photos/piscina-azul.jpeg'
+import piscina2 from '../../../assets/photos/piscina-azul.jpeg'
 import piscina3 from '../../../assets/photos/piscina3.jpeg'
+import piscina4 from '../../../assets/photos/piscina_nuevo_1.jpeg'
+import piscina5 from '../../../assets/photos/piscina_nuevo_2.jpeg'
+import piscina6 from '../../../assets/photos/piscina_nuevo_3.jpeg'
+import piscina7 from '../../../assets/photos/fincapalmerasfoto4.jpeg'
 import fincapalmerasfoto1 from '../../../assets/photos/fincapalmerasfoto1.jpeg'
 import fincapalmerasfoto2 from '../../../assets/photos/fincapalmerasfoto2.jpeg'
-import fincapalmerasfoto3 from '../../../assets/photos/fincapalmerasfoto3.jpeg'
-import fincapalmerasfoto4 from '../../../assets/photos/fincapalmerasfoto4.jpeg'
+import fincapalmerasfoto4 from '../../../assets/photos/finca_nuevo_1.jpeg'
+import fincapalmerasfoto5 from '../../../assets/photos/finca_nuevo_2.jpeg'
+import fincapalmerasfoto6 from '../../../assets/photos/finca_nuevo_3.jpeg'
+import fincapalmerasfoto7 from '../../../assets/photos/finca_nuevo_4.jpeg'
+import fincapalmerasfoto8 from '../../../assets/photos/finca_nuevo_5.jpeg'
+import cocina1 from '../../../assets/photos/cocina_nuevo_1.jpeg'
+import cocina2 from '../../../assets/photos/cocina_nuevo_2.jpeg'
+import cocina3 from '../../../assets/photos/cocina_nuevo_3.jpeg'
 import cuartoLiteras from '../../../assets/photos/cuarto-literas.jpeg'
 import salonFiesta from '../../../assets/photos/salon-fiesta.jpeg'
-import palmeras from '../../../assets/photos/palmeras.jpeg'
 
 const pictures = [
     { id: 1, src: piscina, alt: 'piscina'},
-    { id: 2, src: piscinaAzul, alt: 'piscina2'},
+    { id: 2, src: piscina2, alt: 'piscina2'},
     { id: 3, src: piscina3, alt: 'piscina3'},
+    { id: 1, src: piscina4, alt: 'piscina4'},
+    { id: 2, src: piscina5, alt: 'piscina5'},
+    { id: 3, src: piscina6, alt: 'piscina6'},
+    { id: 7, src: piscina7, alt: 'piscina7'},
     { id: 4, src: fincapalmerasfoto1, alt: 'fincapalmerasfoto1'},
     { id: 5, src: fincapalmerasfoto2, alt: 'fincapalmerasfoto2'},
-    { id: 6, src: fincapalmerasfoto3, alt: 'fincapalmerasfoto3'},
-    { id: 7, src: fincapalmerasfoto4, alt: 'fincapalmerasfoto4'},
-    { id: 8, src: cuartoLiteras, alt: 'cuartoLiteras'},
+    { id: 6, src: fincapalmerasfoto4, alt: 'fincapalmerasfoto4'},
+    { id: 6, src: fincapalmerasfoto5, alt: 'fincapalmerasfoto5'},
     { id: 9, src: salonFiesta, alt: 'salon fiesta'},
-    { id: 10, src: palmeras, alt: 'palmeras'},
+    { id: 8, src: cuartoLiteras, alt: 'cuartoLiteras'},
+    { id: 6, src: fincapalmerasfoto8, alt: 'fincapalmerasfoto8'},
+    { id: 6, src: fincapalmerasfoto6, alt: 'fincapalmerasfoto6'},
+    { id: 6, src: fincapalmerasfoto7, alt: 'fincapalmerasfoto7'},
+    { id: 6, src: cocina2, alt: 'cocina2'},
+    { id: 6, src: cocina1, alt: 'cocina1'},
+    { id: 6, src: cocina3, alt: 'cocina3'},
   ];
   
   export default pictures;
