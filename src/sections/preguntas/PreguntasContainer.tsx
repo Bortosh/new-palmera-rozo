@@ -2,7 +2,7 @@ import DefaultMain from "../../generalPalmeras/DefaultMain"
 
 const PreguntasContainer = () => {
   return (
-    <DefaultMain title="Preguntas">
+    <DefaultMain>
       <p>preguntas</p>
     </DefaultMain>
   )

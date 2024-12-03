@@ -1,3 +1,4 @@
+import { Divider } from "@mui/material";
 import DefaultMain from "../../generalPalmeras/DefaultMain"
 import styles from './styles/ubicacion.module.css'
 
@@ -9,7 +10,9 @@ const UbicacionContainer = () => {
   const coordsFooter = 'https://www.google.com/maps?ll=3.619018,-76.421998&z=15&t=m&hl=en&gl=US&mapclient=embed&q=calle+10+19+la+torre+rozo';
 
   return (
-    <DefaultMain title="nuestra ubicación" >
+    <DefaultMain>
+      <h1 className={styles.sectionTitle}>nuestra ubicación</h1>
+      <Divider />
       <a href={coordsFooter} target='_blank' className={styles.ubicacionAncore}>Calle 10 # 19 - 483 La Torre, Rozo, Valle Del Cauca</a>
       <div className={styles.mapContainer}>
         <iframe

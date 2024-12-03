@@ -3,7 +3,7 @@ import DefaultMain from "../../generalPalmeras/DefaultMain"
 
 const RedesSocialesContainer = () => {
   return (
-    <DefaultMain title="redes sociales">
+    <DefaultMain>
       <p>redes sociales</p>
     </DefaultMain>
   )

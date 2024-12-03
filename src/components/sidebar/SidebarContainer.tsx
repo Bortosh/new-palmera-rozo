@@ -4,6 +4,8 @@ import SidebarLogo from './components/SidebarLogo';
 
 import { useEffect, useState } from 'react';
 import ModalSidebar from './components/ModalSidebar';
+import WhatsappLogo from './components/WhatsappLogo';
+import WhatsappLogoText from './components/WhatsappLogoText';
 
 const Sidebar = () => {
 
@@ -48,6 +50,12 @@ const Sidebar = () => {
             <ul className={styles.sidebarWrapperList}>
               <SidebarList />
             </ul>
+            <div className={styles.wrapperWhatsappLogo}>
+              <WhatsappLogo />
+            </div>
+            <div className={styles.wrapperWhatsappLogoText}>
+              <WhatsappLogoText />
+            </div>
           </div>
       }
     </>
