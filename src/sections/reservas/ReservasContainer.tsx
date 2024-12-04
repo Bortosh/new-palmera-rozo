@@ -9,7 +9,7 @@ const ReservasContainer = () => {
   return (
     <DefaultMain>
       <div className={styles.wrapperSectionTitle}>
-        <h4 className={styles.sectionTitle}>Las Palmeras está a un clic de distancia.</h4>
+        <h4 className={styles.sectionTitle}>¡Las Palmeras está a un clic de distancia!</h4>
         <Divider />
       </div>
       <div className={styles.wrapperReservas}>
