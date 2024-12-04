@@ -1,0 +1,51 @@
+/* Servicios styles */
+.wrapperServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  
+  .serviciosTitle {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(131, 91, 32);
+    margin-bottom: 1rem;
+  }
+  
+  .serviciosDescription {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .serviciosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .servicioItem {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .servicioItem h4 {
+    font-size: 1.25rem;
+    color: #C19A6B;
+    margin-bottom: 0.5rem;
+  }
+  
+  .servicioItem p {
+    font-size: 16px;
+    color: #555;
+  }
+  
