@@ -1,17 +1,18 @@
 
-import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styles from './styles/preguntas.module.css'
 import DefaultMain from "../../generalPalmeras/DefaultMain";
+import { useState } from 'react';
 
 const faqData = [
   {
     question: "¿Qué tipos de descuentos ofrecen para grupos grandes?",
-    answer: "Ofrecemos tarifas especiales para grupos de más de 30 personas. Perfectas para reuniones familiares, eventos corporativos o viajes grupales.",
+    answer:
+      "Ofrecemos tarifas especiales para grupos de más de 30 personas. Perfectas para reuniones familiares, eventos corporativos o viajes grupales.",
   },
   {
     question: "¿Qué incluye el alquiler para eventos?",
-    answer: "El costo del alquiler incluye mesas y sillas para los eventos, además de asesoría para aprovechar al máximo los espacios.",
+    answer:
+      "El costo del alquiler incluye mesas y sillas para los eventos, además de asesoría para aprovechar al máximo los espacios.",
   },
   {
     question: "¿Cuántas personas pueden hospedarse en la finca?",
@@ -19,15 +20,23 @@ const faqData = [
   },
   {
     question: "¿La finca es apta para niños y mascotas?",
-    answer: "Sí, la finca es pet-friendly (máximo 3 mascotas) y cuenta con áreas ideales para familias con niños.",
+    answer:
+      "Sí, la finca es pet-friendly (máximo 3 mascotas) y cuenta con áreas ideales para familias con niños.",
   },
   {
     question: "¿Cómo se realiza una reserva en Finca Las Palmeras?",
-    answer: "Puedes contactarnos directamente por whatsapp en la seccion de reservas en nuestra pagina web.",
+    answer:
+      "Puedes contactarnos directamente por whatsapp en la sección de reservas en nuestra página web.",
   },
 ];
 
 const FAQContainer = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index:any) => {
+    setOpenIndex(index === openIndex ? null : index);
+  };
+
   return (
     <DefaultMain>
       <div className={styles.wrapperFaq}>
@@ -39,21 +48,29 @@ const FAQContainer = () => {
         </div>
         <div className={styles.accordionWrapper}>
           {faqData.map((item, index) => (
-            <Accordion key={index} className={styles.accordion}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+            <div
+              key={index}
+              className={`${styles.accordion} ${
+                openIndex === index ? styles.active : ""
+              }`}
+            >
+              <div
                 className={styles.accordionSummary}
+                onClick={() => toggleAccordion(index)}
               >
-                <Typography className={styles.accordionQuestion}>
+                <span className={styles.accordionQuestion}>
                   {item.question}
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography className={styles.accordionAnswer}>
-                  {item.answer}
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
+                </span>
+                <span className={styles.accordionIcon}>
+                  {openIndex === index ? "-" : "+"}
+                </span>
+              </div>
+              {openIndex === index && (
+                <div className={styles.accordionDetails}>
+                  <p className={styles.accordionAnswer}>{item.answer}</p>
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>
