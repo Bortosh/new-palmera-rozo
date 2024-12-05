@@ -1,8 +1,10 @@
 .sectionTitle {
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    align-items: center;
     color: #b8860b;
+    text-align: center;
+    padding-top: 2rem;
 }
 
 .mapContainer {
