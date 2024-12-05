@@ -1,12 +1,17 @@
 .wrapperSectionTitle {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .sectionTitle {
-    font-size: 2rem;
-    color: #b8860b;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #b8860b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .wrapperReservas {
@@ -34,34 +39,40 @@
 /* MOBILE */
 @media (max-width: 788px) {
 
-    .sectionTitle {
-        font-size: 12px;
-    }
+  .wrapperSectionTitle {
+    padding-top: 2rem;
+  }
 
-    .wrapperReservas {
+  .sectionTitle {
+      font-size: 1.8rem;
+      line-height: 1.2;
+  }
+
+  .wrapperReservas {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .wrapperReservasText {
-      width: 80%;
-    }
-  
-    .wrapperReservasLogo img {
-      width: 250px;
+  }
+
+  .wrapperReservasText {
+      width: 90%;
+  }
+
+  .wrapperReservasLogo img {
+      width: 300px;
       height: auto;
       padding-left: 0;
-    }
-  
-    .reservaText {
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
   }
+
+  .reservaText {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+  }
+}
+
   
   /* Pantallas muy pequeñas */
   @media (max-width: 390px) {
     .wrapperReservasText {
-      width: 90%; /* Más espacio al texto en pantallas pequeñas */
+      width: 90%;
     }
   }

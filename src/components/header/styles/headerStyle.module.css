@@ -14,11 +14,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-style: italic;
-}
-
-.subTitleText {
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 /* Media query para dispositivos móviles */
@@ -34,17 +30,9 @@
     flex-direction: column;
   }
 
-  .subTitleText {
-    padding: 0;
-    margin: 0;
-  }
-
 }
 
 @media (max-width: 412px) {
-  .wrapperSubTitle {
-    padding-bottom: 1.5rem;
-  }
 
   .mainContentHeader {
     margin-left: 110px;
@@ -54,11 +42,5 @@
 @media (max-width: 360px) {
   .mainContentHeader {
     margin-left: 80px;
-  }
-}
-
-@media (max-width: 344px) {
-  .wrapperSubTitle {
-    padding-bottom: 1.4rem;
   }
 }
