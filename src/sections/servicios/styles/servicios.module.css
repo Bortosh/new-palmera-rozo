@@ -42,7 +42,8 @@
   .servicioItem:hover {
     background-color: #C19A6B20;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.35);
-  } 
+  }
+
   .servicioItem h4 {
     font-size: 1.25rem;
     color: #C19A6B;
