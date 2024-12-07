@@ -27,7 +27,7 @@ const ComentariosContainer = () => {
     },
     {
       nombre: "Laura Velásquez",
-      texto: "Nos encantó la finca. Los espacios son ideales para niños y adultos, y mis mascotas estabas felices. Excelente relación calidad-precio.",
+      texto: "Nos encantó la finca. Los espacios son ideales para niños y adultos, y mis mascotas estaban felices. Excelente relación calidad-precio.",
       estrellas: 5,
     },
     {
