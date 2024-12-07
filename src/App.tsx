@@ -1,17 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Sidebar from "./components/sidebar/SidebarContainer"
-import HeaderContainer from "./components/header/HeaderContainer"
-import Layout from "./generalPalmeras/Layout"
-import FooterContainer from "./components/footer/FooterContainer"
-import styles from './app.module.css'
-import routes from "./routes"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import WelcomeModal from './generalPalmeras/WelcomeModal'
+import Sidebar from "./components/sidebar/SidebarContainer";
+import HeaderContainer from "./components/header/HeaderContainer";
+import Layout from "./generalPalmeras/Layout";
+import FooterContainer from "./components/footer/FooterContainer";
+import styles from './app.module.css';
+import routes from "./routes";
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '80vh', maxWidth: '100%' }}>
+          <WelcomeModal />
           <div className={styles.containerSidebarHeader}>
             <HeaderContainer />
             <Sidebar />
@@ -31,7 +32,7 @@ function App() {
         <FooterContainer />
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
