@@ -3,9 +3,9 @@ import SidebarLogo from '../sidebar/components/SidebarLogo';
 
 const FooterContainer = () => {
   return (
-    <div className={style.mainContentFooter}>
+    <footer className={style.mainContentFooter}>
       <SidebarLogo />
-    </div>
+    </footer>
   )
 }
 
