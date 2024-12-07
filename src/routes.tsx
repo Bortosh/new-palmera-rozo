@@ -1,3 +1,5 @@
+import { Navigate } from "react-router-dom";
+
 import ComentariosContainer from "./sections/comentarios/ComentariosContainer";
 import GaleriaContainer from "./sections/galeria/GaleriaContainer";
 import PalmerasContainer from "./sections/las palmeras/PalmerasContainer";
@@ -20,6 +22,7 @@ const routes = [
     { id: 8, path: "/preguntas", element: <PreguntasContainer /> },
     { id: 9, path: "/redes", element: <RedesSocialesContainer /> },
     { id: 10, path: "/noticias", element: <NoticiasContainer /> },
+    { id: 11, path: "*", element: <Navigate to="/" replace /> },
   ];
 
 export default routes;
